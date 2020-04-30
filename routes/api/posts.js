@@ -86,7 +86,7 @@ router.delete("/:id", auth, async (req, res) => {
     const post = await Post.findById(req.params.id);
 
     // Check for ObjectId format and post
-    if (!post || !req.params.id.match(/^[0-9a-fA-F]{24}$/)) {
+    if (!post || ) {
       return res.status(404).json({ msg: "Post not found" });
     }
 

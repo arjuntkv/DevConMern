@@ -14,7 +14,7 @@ const connectDB = async () => {
       useCreateIndex: true
       //These three are used to handle the DeprecationWarning while connecting DB
     });
-    console.log("Mongodb connected");
+    console.log("mongodb connected");
   } catch (err) {
     console.error(err.message);
 
