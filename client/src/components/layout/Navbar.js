@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <nav class="navbar bg-dark">
+    <nav className="navbar bg-dark">
       <h1>
         <a href="index.html">
-          <i class="fas fa-code"></i> DevConnector
+          <i className="fas fa-code"></i> DevConnector
         </a>
       </h1>
       <ul>
@@ -13,10 +14,10 @@ export const Navbar = () => {
           <a href="profiles.html">Developers</a>
         </li>
         <li>
-          <a href="register.html">Register</a>
+          <Link to="/register">Register</Link>
         </li>
         <li>
-          <a href="login.html">Login</a>
+          <Link to="/login">Login</Link>
         </li>
       </ul>
     </nav>
